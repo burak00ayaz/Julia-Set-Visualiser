@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
  
-//TODO should we include this citation in ausarbeitung
 //Adapted from Minhas Kamal's contribution in the following discussion:
 //https://stackoverflow.com/questions/2654480/writing-bmp-image-in-pure-c-c-without-other-libraries
 //Visited 29.12.2021

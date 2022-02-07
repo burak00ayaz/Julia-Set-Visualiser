@@ -9,17 +9,20 @@
 #include "util.h"
 
 unsigned iterate_naive(float a, float b, Arguments* args) {
-    float tmp_a;
+    float a2 = a*a;
+    float b2 = b*b;   
 
     for (unsigned i=1; i<args->n; i++) {
         //naive julia function
         //z = z * z + args->c;
-        tmp_a = a;
-        a = a*a - b*b + crealf(args->c);
-        b = 2*tmp_a*b + cimagf(args->c);
+        b = 2*a*b + cimagf(args->c);
+        a = a2 - b2 + crealf(args->c);
+
+        a2 = a*a;
+        b2 = b*b;
 
         //check if complex number is outside of escape radius in complex plane
-        if (a*a + b*b > args->radius_sqr) {
+        if (a2 + b2 > args->radius_sqr) {
             return i;
         }
     }
