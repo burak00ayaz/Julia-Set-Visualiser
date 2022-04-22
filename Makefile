@@ -6,4 +6,4 @@ SOURCE_FILES=main.c naive.c performanz.c intrin_v0.c intrin_v1.c bmp.c util.c co
 
 # -lm: link math library
 main:
-	gcc $(CFLAGS) -o main $(SOURCE_FILES) -lm
+	cd src && gcc $(CFLAGS) -o ../julia $(SOURCE_FILES) -lm
