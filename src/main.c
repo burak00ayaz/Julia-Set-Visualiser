@@ -75,7 +75,7 @@ void print_help(char* executable_name) {
 	printf("    -c <real>,<imag>:    Choose complex c constant. Give real and imaginary\n"
 		   "                         parts as floating point numbers seperated by a comma.\n"
 		   "                         Use '-c rand' option to choose a random c value from\n"
-		   "                         our favourites.\n"
+		   "                         my favourites.\n"
 		   "                         Default: %f + %f i\n\n", crealf(DEFAULT_C), cimagf(DEFAULT_C));
                    
 	printf("    -o filename:         Choose path/filename for the image to be created.\n"
