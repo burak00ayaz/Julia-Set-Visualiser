@@ -55,3 +55,12 @@ By varying the `c` constant, we get different Julia sets.
 
 #### Output
 ![Julia Set Fractal 2](/examples/example2.bmp?raw=true "Julia Set Fractal 2")
+
+### Example 3
+#### Input 
+```
+./julia -c 0.33,0.058 -d 2000,2000 -r 0.0015 -o example3.bmp
+```
+
+#### Output
+![Julia Set Fractal 3](/examples/example3.bmp?raw=true "Julia Set Fractal 3")
